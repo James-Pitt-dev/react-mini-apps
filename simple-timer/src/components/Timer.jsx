@@ -39,6 +39,7 @@ const Timer = () => {
         setIsRunning(false);
         setTime(0);
         timerRef.current = null;
+        localStorage.removeItem('time');
       }
 
     return ( <>
